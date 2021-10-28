@@ -4,7 +4,7 @@ const assert = require("chai").assert;
 const fs = require('fs');
 
 describe("Todo operations", () => {
-    describe("Todo function: happy", () => {
+    describe("Todo functions", () => {
         it("adding new todo to the list", () => {
             const todo = new Todo();
             todo.add("remind me about the event at 11:00am")

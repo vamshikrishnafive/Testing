@@ -2,7 +2,7 @@ const expect = require("chai").expect;
 const fs = require('fs');
 const Todo = require('../src/todo.js');
 
-describe("Todo function: happy", () => {
+describe("Todo Operations", () => {
     let todo;
     beforeEach(() => {
         todo = new Todo();
@@ -13,7 +13,7 @@ describe("Todo function: happy", () => {
             fs.unlinkSync("todos.csv")
         }
     })
-    it("saving todo into new file: other approach", async () => {
+    it("saving todo into new file: async await with hooks", async () => {
         todo.complete("save the file to disk")
         await todo.saveFile();
         expect(fs.existsSync("todos.csv")).to.equal(true);
