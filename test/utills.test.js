@@ -1,4 +1,4 @@
-const { removeDupsFromArray, reverString } = require('../utils.js');
+const { removeDupsFromArray, reverString } = require('../src/utils.js');
 const expect = require('chai').expect;
 
 describe("Array operation", function () {

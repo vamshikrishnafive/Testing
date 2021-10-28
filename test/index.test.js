@@ -1,5 +1,5 @@
 describe("MathLib", function() {
-    let Math = require('../index');
+    let Math = require('../src/index');
     let expect = require('chai').expect;
     describe("Add", function() {
         it('add two numbers together', function(){
